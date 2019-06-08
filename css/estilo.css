@@ -1,0 +1,358 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:#fff url(../imagens/fundo.png) repeat-x;
+	font-family: "Trebuchet MS", Helvetica, sans-sherif;
+	background-color:rgba(245,245,245,.4);
+
+}
+ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#container{
+	width:90%;
+	margin: 0 auto;
+}
+
+#topo{
+	height:150px;
+	padding-top:25px;
+	background: url(../imagens/detalhe-topo.png) no-repeat right top;
+}
+
+.logo{
+	width:152px;
+	height:66px;
+	background:url(../imagens/logo.png) no-repeat center center;
+	color:#fff;
+	text-indent:-3000px;
+}
+
+#topo ul{
+	background:#b10333;
+	margin-top:30px;
+	float:left;
+}
+#topo ul li{
+	float:left;
+}
+#topo ul a{
+	font-size:0.9em;
+	display: block;
+	padding: 0.5em 1.5em; 
+	line-height:2.1em;
+	text-decoration:none;
+	color:#fff;
+	background: url(../imagens/divisor.png) no-repeat left;
+}
+#topo ul a:hover{
+	color:#69001d;
+}
+#topo ul .primeiro a{
+	background:none;img src="http://s2.glbimg.com/5qR5xkCQo8fRaHhN839FXBRRz_g=/620x465/s.glbimg.com/jo/g1/f/original/2016/03/20/acidente-aviao-agnelli-sp_mario_angelo_estadao_conteudo.jpg"
+}
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.mundo #navegacao a#mundo,
+body.economia #navegacao a#economia,
+body.fotos #navegacao a#fotos
+{
+	color:#fff;
+	background-color:#de003d;
+	cursor:text;
+}
+
+#conteudo{
+	/*border:1px solid red;
+	background-color: #f2f2f2;*/
+	margin-top:60px;
+	clear:both;
+}
+#primario{
+	width: 60%;
+	float: left;
+	margin:0 0 20px 20%;
+}
+#uma-coluna #primario{
+	width: 80%;
+	margin:0 0 20px 0;
+}
+#duas-colunas #primario{
+	width: 75%;
+	margin:0 0 20px 0;
+}
+body.brasil #primario,
+body.mundo #primario,
+body.economia #primario{
+	box-shadow: 10px 0 10px -10px #888888, -5px 0 8px -4px #888888;
+	background-color:#fff;
+}
+#secundario{
+	width: 20%;
+	float: left;
+	margin:0 0 20px 15px;
+}
+#secundario .caixa{
+	background: none;
+}
+#secundario .caixa h2{
+	color:#fff;
+	background: #3e7ab9;
+	margin-bottom:10px;
+}
+#secundario .caixa li{
+	list-style: none;
+	border-bottom: 1px solid rgba(204,204,204,.5);
+	border-top:1px solid #fff;
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+	transition: .5s;
+	text-align: justify;
+	margin:5px 0;
+}
+#secundario .caixa li img{
+	width: 100%;
+	height: 120px;
+}
+#secundario .caixa li a p{
+	display: none;
+	margin:3px 1px;
+}
+#secundario .caixa li a {
+	font-size:.8em;
+	color:#777;
+	text-decoration: none;
+	margin:15px 5px;
+}
+#secundario .caixa li a h3{
+	font-size: 1em !important;
+	padding: 0;
+	color: #3e7ab9;
+}
+#secundario .caixa li a p{
+	font-size: 1em !important;
+	color: #000;
+	display: none;
+	margin:3px 1px;
+}
+
+#lateral{
+	width: 20%;
+	float: left;
+	margin:0 0 20px -86%;
+}
+
+.caixa{
+	margin: 10px 0;
+	padding:0px 0 5px 0;
+	background-color: none;
+}
+.caixa h2, .destaque h2, .lateral h2{
+	font-size: 1em;
+	/*color: #fff;
+	background:#274c71;*/
+	padding: 5px;
+	text-transform: uppercase;
+}
+
+.caixa-conteudo{
+	background:#fff;
+	padding: 15px 50px;
+	margin-top: 5px;
+	border:1px solid transparent;
+}
+.caixa-conteudo p{
+	padding: 5px;
+	text-align: justify;
+}
+
+#uma-coluna .caixa-conteudo{
+	padding:25px;
+}
+#duas-colunas .destaque .caixa-conteudo h2{
+	font-size: 1.5em;
+	text-transform:none;
+	/*background:#b10333;
+	color: #fff;*/
+}   
+#duas-colunas .destaque .caixa-conteudo{
+	width:45%;
+	margin-right: 12px;
+	float:left;
+	padding:15px;
+	min-height:450px;
+	max-height: 450px;
+	border:1px solid rgba(200,200,200,.3);
+}
+.brasil .caixa-conteudo h4,
+.brasil .caixa-conteudo h3,
+.brasil .caixa-conteudo h2,
+.brasil .caixa-conteudo p,
+.mundo .caixa-conteudo h4,
+.mundo .caixa-conteudo h3,
+.mundo .caixa-conteudo h2,
+.mundo .caixa-conteudo p,
+.saude .caixa-conteudo h4,
+.saude .caixa-conteudo h3,
+.saude .caixa-conteudo h2,
+.saude .caixa-conteudo p,
+.economia .caixa-conteudo h4,
+.economia .caixa-conteudo h3,
+.economia .caixa-conteudo h2,
+.economia .caixa-conteudo p{
+	line-height:1.5em;
+}
+#uma-coluna .caixa-conteudo a{
+	text-decoration: none;
+	color:#777;
+}
+
+#uma-coluna .caixa-conteudo a:hover{
+	text-decoration: underline;
+}
+.img-destaque{
+	margin: 4%;
+	max-width: 90%;
+	max-height:1680px;
+}
+
+/** Inicio Formatando Listas  ***/
+#lista-noticias li{
+	padding:40px 25px;
+	border-bottom: 1px solid rgba(204,204,204,.5);
+	min-height: 250px;
+	max-height:300px;
+	border-top:1px solid #fff;
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+	transition: .5s;
+}
+#lista-noticias li>a {
+	font-size:.8em;
+	color:#777;
+	text-decoration: none;
+}
+#lista-noticias li a #div-img{
+	float:left;
+	width: 40%;
+	margin:1%;
+}
+#lista-noticias li a #div-img img{
+	width:100%;
+}
+#lista-noticias li a #div-noticia{
+	float:left;
+	width: 55%;
+	margin:1%;
+}
+#lista-noticias li a #div-noticia h3{
+	font-size: 1.8em !important;
+	padding: 0;
+	color: #3e7ab9;
+}
+#lista-noticias li a #div-noticia p{
+	font-size: 1em !important;
+	color: #000;	
+}
+
+#lista-noticias li:hover {
+	background:#eee;
+	border:1px solid rgba(204,204,204,.2);
+	cursor: pointer;
+}
+#lista-noticias li a h2:hover{
+	text-decoration:underline;
+}
+/** Fim Formatando Listas  ***/
+
+.data{
+	color:#cecece;
+	/*background:#b10333;*/
+	padding: 5px 0 0 5px;
+	font-size: 1em;
+	color: #ccc;
+	text-align:left;
+}
+
+
+.ctgbrasil>a{
+	color: rgb(0,110,0) !important;
+	text-decoration:none;
+}
+.ctgmundo>a{
+	color: rgb(0,0,110) !important;
+	text-decoration:none;
+}
+.ctgeconomia>a{
+	color: rgb(110,0,0) !important;
+	text-decoration:none;
+}
+
+.ctgbrasil>a:hover{	
+	margin-top:10px;
+	color: rgb(0,70,0) !important;
+}
+.ctgmundo>a:hover{
+	margin-top:10px;	
+	color: rgb(0,0,70) !important;
+}
+.ctgeconomia>a:hover{
+	color: rgb(70,0,0) !important;
+	text-decoration:none;
+}
+
+/***** GALERIA  *****/
+.item-galeria{
+    width: 300px;
+    height: 250px;
+    margin:3px;
+    float:left;
+}
+.item-galeria a img:hover{
+    background-color:#000;
+    opacity: .8;
+}
+.item-galeria a img{
+    width:250px;
+    max-height:200px;
+}
+
+
+
+
+hr{
+	text-align:center;
+	margin:0 5%;
+	border:1px solid #eee;
+}
+
+.right{
+	text-align: right;
+}
+.left{
+	text-align: left;
+}
+.justify{
+	text-align: justify;
+}
+.clear{
+	clear:both;
+}
+#container-rodape{
+	color: #fff;
+	background:#294c71;
+	padding: 20px;
+	width:100%;
+	bottom:0;
+	
+}
+#rodape{
+	width: 750px;
+	margin:0 auto;
+	text-align: center;
+}
